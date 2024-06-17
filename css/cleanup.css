@@ -1,35 +1,30 @@
 /* write your override styles here */
 /* Target elements by ID */
-#tag-2 {
-  display: none;
-}
 
-#tag-4 {
-  display: none;
-}
-
-#tag-6 {
-  display: none;
-}
-
-/* Target elements by class within a container */
 #wall .tag-1 {
   display: none;
 }
 
-.parent #tag-3 {
+div#wall #tag-2 {
   display: none;
 }
 
-.parent #tag-5 {
+div#wall #tag-3.slick.wicked {
   display: none;
 }
 
-/* Target elements using descendant selectors */
-.parent > div:nth-child(2) {
+#wall .parent #tag-4 {
   display: none;
 }
 
-.parent > div:nth-child(3) {
+body div#wall .parent #tag-5.slick {
+  display: none;
+}
+
+body div#wall div.parent div:last-child div#tag-6 {
+  display: none;
+}
+
+body div#wall div.parent div > #tag-7.slick:only-child {
   display: none;
 }
